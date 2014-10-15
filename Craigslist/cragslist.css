@@ -21,9 +21,13 @@ body {
 	border-color: #f4f4f4;
 	border-bottom-color: #black;
 	text-align: center;
-
-	
+	text-transform: lowercase
+		
 }
+
+#primarynav h1 {
+	color: purple;
+	}
 
 #TopNav {
 	padding: 3px 6px;
@@ -206,6 +210,9 @@ body {
 }
 #locations ul li {
 	list-style-type: none;
+	margin: 5px;
 	text-align: left;
 	margin: 0;
+	text-indent: -1;
+	
 	}
