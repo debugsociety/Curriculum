@@ -20,9 +20,9 @@ A client expects to see little to no difference between a picture of a layout an
 
 Examples: 
 
-[Picture 1 - Before](layout\files\mobilelayout.jpg) vs [Picture 1 - After](layout\files\mobilelayout.jpg)
+[Picture 1 - Before](../layout/files/mobilelayout.jpg) vs [Picture 1 - After](../layout/files/mobilelayout.jpg)
 
-[Picture 2 - Before](layout\files\Picture2 before.jpg) vs [Picture 2 - After](layout\files\fullsize-content.jpg)
+[Picture 2 - Before](../layout/files/Picture2 before.jpg) vs [Picture 2 - After](../layout/files/fullsize-content.jpg)
 
 ## Pair programming
 
