@@ -8,7 +8,8 @@
 ### Mac users
 
 
-## Set up a local development environment with Vagrant
+## Set up a local development 
+
 
 Create a folder on your desktop called Sites
 
