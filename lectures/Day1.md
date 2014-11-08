@@ -3,15 +3,7 @@
 ## Download and install the following software
 
 ### Windows users
-Download & Install VirtualBox
-https://www.virtualbox.org/wiki/Downloads
-(VirtualBox 4.3.16 for OS X hosts  x86/amd64)
 
-Download & Install Vagrant
-(Latest version from https://www.vagrantup.com/downloads.html)
-
-Download & Install git bash
-http://msysgit.github.io
 
 ### Mac users
 Download & Install VirtualBox
