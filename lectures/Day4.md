@@ -1,16 +1,16 @@
 # Day 4: Pair Programming (Continued)
 
 ##Summary of day 4 activities:
-1) Pulled down a copy of the curriculum repo (cloning)
-2) Worked on the homework file in a new branch
-3) Pushed our changes to our repos so that our pair-programming-partners may fork them 
+1. Pulled down a copy of the curriculum repo (cloning)
+2. Worked on the homework file in a new branch
+3. Pushed our changes to our repos so that our pair-programming-partners may fork them 
 and work on them themselves.
 
 ### Cloning the Curriculum Repo
 Steps to cloning the Curriculum Repo
-1) Fork the debugsociety/Curriculum repo on GitHub
-2) Copy the HTTPS clone URL from the forked Curriculum repo
-3) In the terminal, run the command below:
+1. Fork the debugsociety/Curriculum repo on GitHub
+2. Copy the HTTPS clone URL from the forked Curriculum repo
+3. In the terminal, run the command below:
 "git clone 'URL copied from step 2'"
 
 ### Create new branch to work on homework file
@@ -26,11 +26,11 @@ example, we might name the branch 'styling-jobs'.
 We've made some changes, but they are only on our computers. To add them to
 our forked GitHub Curriculum repo, we need to commit those changes, and push
 them to the repo.
-1) Commit the changes you made using the command below:
+1. Commit the changes you made using the command below:
 "git commit -m 'Insert meaningful message describing your change'"
 Note: if you added a new file that you would like to include as part of your 
 changes, you'll need to run git add first.
-2) To push the changes to our repo, we will make use of the git push command.
+2. To push the changes to our repo, we will make use of the git push command.
 
 Run the command "git remote -v" first to see the names of your remote connections. 
 If you cloned the Curriculum Repo after forking as mentioned above, you should see 
