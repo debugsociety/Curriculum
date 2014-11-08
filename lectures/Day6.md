@@ -13,6 +13,19 @@ Step 1, planning site architecture:
 2. Location
 
 #### gig offered
+#####Fields Currently Added (Machine Name)
+<ul> 
+<li>title </li>
+<li>body</li>
+<li>field_hire_service</li>
+<li>field_hire_category</li>
+<li>field_email_confirm</li>
+<li>field_contact_medium</li>
+<li>field_email_privacy</li>
+<li>field_pay</li>
+<li>field_state</li>
+<li>field_ok_for_contact</li>
+</ul>
 #### resume / job wanted
 #### housing offered
 #### housing wanted
