@@ -65,6 +65,13 @@ Step 1, planning site architecture:
 <li>field_size2</li>
 </ul>
 #### for sale by owner
+#####Fields Currently Added (Machine Name)
+<ul>
+<li>title</li>
+<li>body</li>
+<li>field_price</li>
+<li>field_condition</li>
+</ul>
 #### for sale by dealer
 #### wanted by owner
 #### wanted by dealer
