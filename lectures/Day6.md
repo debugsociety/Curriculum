@@ -28,6 +28,27 @@ Step 1, planning site architecture:
 </ul>
 #### resume / job wanted
 #### housing offered
+#####Fields Currently Added (Machine Name)
+<ul>
+<li>title</li>
+<li>body</li>
+<li>field_please_choose_a_category_</li>
+<li>field_sqft</li>
+<li>field_rent</li>
+<li>field_available_on</li>
+<li>field_date</li>
+<li>field_bathrooms</li>
+<li>field_housing_type</li>
+<li>field_laundry</li>
+<li>field_parking</li>
+<li>field_wheelchair_accessible</li>
+<li>field_open_house_dates</li>
+<li>field_no_smoking</li>
+<li>field_street</li>
+<li>field_cross_street</li>
+<li>field_city</li>
+<li>field_of_for_others_to_contact_m</li>
+</ul>
 #### housing wanted
 #### for sale by owner
 #### for sale by dealer
