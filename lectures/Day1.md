@@ -6,14 +6,7 @@
 
 
 ### Mac users
-Download & Install VirtualBox
-https://www.virtualbox.org/wiki/Downloads
-(VirtualBox 4.3.16 for OS X hosts  x86/amd64)
 
-Download & Install Vagrant
-(Latest version from https://www.vagrantup.com/downloads.html)
-
-Downliand & Install xCode (from the app store)
 
 ## Set up a local development environment with Vagrant
 
