@@ -14,3 +14,7 @@ Acquia Dev Desktop 2 allows you to install, test, and build Drupal sites locally
 -choose to install Drupal v7.2
 -choose where to installl drupal ex: Desktop\sites
 -After installation is complete you should see the name of the website on the left "website name.local", click on it to open it.
+
+
+## Configuring your web site
+
