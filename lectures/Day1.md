@@ -18,3 +18,11 @@ Acquia Dev Desktop 2 allows you to install, test, and build Drupal sites locally
 
 ## Configuring your web site
 
+
+
+## Accounts setup 
+
+Create accounts at the following websites:
+github.com
+drupal.org
+slack.com (you will receive an invite)
