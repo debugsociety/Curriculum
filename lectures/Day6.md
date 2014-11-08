@@ -50,6 +50,20 @@ Step 1, planning site architecture:
 <li>field_of_for_others_to_contact_m</li>
 </ul>
 #### housing wanted
+#####Fields Currently Added (Machine Name)
+<ul>
+<li>title</li>
+<li>body</li>
+<li>field_phone_housing</li>
+<li>field_contact_info_housing</li>
+<li>field_additional_contact_housing</li>
+<li>field_contact_name_housing</li>
+<li>field_posting_title_housing</li>
+<li>field_pets_housing</li>
+<li>field_open_house_dates</li>
+<li>field_category_housing_wanted</li>
+<li>field_size2</li>
+</ul>
 #### for sale by owner
 #### for sale by dealer
 #### wanted by owner
