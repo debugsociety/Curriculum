@@ -1,6 +1,6 @@
 # Building Craigslist
 
-Today, we will begin re- building Craigslist.org for educational purposes.
+Today, we will begin re-building Craigslist.org for educational purposes.
 We will learn how a development team collaborates on a large project.
 
 Step 1, planning site architecture:
