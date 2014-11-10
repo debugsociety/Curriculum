@@ -1,6 +1,6 @@
-Day 1: Orientation, set up
+# Day 1: Orientation and set up
 
-## Download and install the Aquia DEV desktop 2
+## Download and install the Aqcuia DEV desktop 2
 
 Acquia Dev Desktop 2 allows you to install, test, and build Drupal sites locally on your Mac or Windows PC and optionally host them on either Acquia Cloud or the Acquia Cloud Free developer sandbox. Easily push or pull to synchronize your local site's code, database, or files with any Acquia Cloud environment. 
 
@@ -12,7 +12,7 @@ Acquia Dev Desktop 2 allows you to install, test, and build Drupal sites locally
 -Select "Get started"
 -Select "Start from scratch,I don't have an existing Drupal site"
 -choose to install Drupal v7.2
--choose where to installl drupal ex: Desktop\sites
+-choose where to install drupal ex: Desktop\Drupal Sites\FirstDrupalSite
 -After installation is complete you should see the name of the website on the left "website name.local", click on it to open it.
 
 
