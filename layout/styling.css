@@ -1,0 +1,43 @@
+
+body {
+	font-size: 1em;
+}
+
+#wrapper {
+	width:98%;
+	margin: 0.3125em auto;
+}
+#primarynav {
+	float:left;
+}
+.secondary-bg {
+	background-color: #f4f4f4;
+	border: 1px solid #cccccc;
+	border-top-width: 0;
+	border-bottom-width: 0;
+}
+.main-column-width {
+	width:160px;
+}
+#content {
+	float:left;
+	min-width:200px;
+	max-width:560px;
+	width:100%;
+	display: block;
+}
+#locations {
+	float:left;
+}
+.block {
+	float:left;
+	width:175px;
+}
+.block h3 {
+	text-transform: lowercase;
+	text-align:center;
+}
+.block li {
+	float:left;
+	min-width:65px;
+}
