@@ -1,19 +1,5 @@
 # Day 3: Development Tasks Building a popular website
 
-## Review
-
-- Agile, Kanban: "unblock" team daily, small task sizes, pick your task
-
-- HTML: Foundation / structure behind a page's elements
-
-- CSS: Layout (position + style) of the page's elements
-
-- Responsive Design: One flexible layout for many devices
-
-- Mobile-first: Design mobile site first, then add full-site elements
-
-- You only become a solid developer by coding, a lot.
-
 ## Pair Programming PSD-to-HTML+CSS
 
 ### Pair programming
@@ -35,7 +21,8 @@ It is not backseat driving. Driver says their thought process, pair programmer p
 We will be pair-programming a real layout from image format to HTML and CSS.
 We will work off of a photo of a popular website
 We will program directly in a text editor (Notepad++ or Sublimetext 2)
-Layouts should look exactly like the real thing Today, we will program the content-rich Craigslist landing page: [http://washingtondc.craigslist.org](http://washingtondc.craigslist.org)
+Layouts should look exactly like the real thing
+Today, we will program the content-rich Craigslist landing page: [http://washingtondc.craigslist.org](http://washingtondc.craigslist.org)
 
 ### PSD to HTML/CSS
 
