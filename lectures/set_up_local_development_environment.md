@@ -69,17 +69,14 @@ Acquia Dev Desktop 2 allows you to install, test, and build Drupal sites locally
 
 ## Local environment setup 
 
--Start Acquia DEV Desktop 2
--Select "Get started"
--Select "Start from scratch,I don't have an existing Drupal site"
--choose to install Drupal v7.2
--choose where to install drupal ex: Desktop\Drupal Sites\FirstDrupalSite
--After installation is complete you should see the name of the website on the left "website name.local", click on it to open it.
-
+1. Start Acquia DEV Desktop 2
+2. Select "Get started"
+3. Select "Start from scratch,I don't have an existing Drupal site"
+4. choose to install Drupal v7.2
+5. choose where to install drupal ex: Desktop\Drupal Sites\FirstDrupalSite
+6. After installation is complete you should see the name of the website on the left "website name.local", click on it to open it.
 
 ## Configuring your web site
-
-
 
 ## Accounts setup 
 

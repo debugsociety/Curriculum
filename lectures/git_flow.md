@@ -1,12 +1,6 @@
 # Git development
 Git takes 'snapshots' of the state of files when changes are made. That allows a user to go back to previous versions of files very easily.
 
-## Summary of day 4 activities:
-1. Pulled down a copy of the curriculum repo (cloning)
-2. Worked on the homework file in a new branch
-3. Pushed our changes to our repos so that our pair-programming-partners may fork them 
-and work on them themselves.
-
 ### Cloning the Curriculum Repo
 Steps to cloning the Curriculum Repo
 1. Fork the debugsociety/Curriculum repo on GitHub
