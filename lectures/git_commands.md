@@ -28,46 +28,48 @@
 ## git checkout [branch] : 
 - Git checkout means that you are switching branches. 
 - For example, I am on branch hello and now I want to switch to the master branch.
-..- write git checkout master
+- write git checkout master
 
 ## git remote add [url]:
 - Git remote add, adds a connection to a repository.
 - For example:
-..-git remote add https://github.com/debugsociety/Curriculum.git
+  - git remote add https://github.com/debugsociety/Curriculum.git
 
 ## git remote:
 - Shows which nicknames of the remote repositories that you are connected to.
-- For example, 
-		-git remote might display: debugsociety origin
+  - For example, 
+  - git remote might display:
+    - origin
+    - debugsociety
 
 ## git remote -v:
 - shows you the entire link of the repositories 
-- For example,   
-		debugsociety   https://github.com/debugsociety/Curriculum.git (fetch)
-		debugsociety   https://github.com/debugsociety/Curriculum.git (push)
-		origin    https://github.com/..[yourgithub]/Curriculum.git (fetch)
-		origin    https://github.com/..[yourgithub]/Curriculum.git (fetch)
+- For example,  
+  - debugsociety   https://github.com/debugsociety/Curriculum.git (fetch)
+  - debugsociety   https://github.com/debugsociety/Curriculum.git (push)
+  - origin    https://github.com/..[yourgithub]/Curriculum.git (fetch)
+  - origin    https://github.com/..[yourgithub]/Curriculum.git (fetch)
 
 ## git branch:
 - Shows you all the branches on your computer with an asterisk next to the branch you are on.
-..- For example,
-		 master
-		*branch2
+  - For example,
+    - master
+    - *branch2
 
 ## git push [name of repository] [branch you are pushing]:
 - Git push is when you want to send it to the online repository 
 - Git push is sending the entire branch 
-- For example, 
-		- git push debugsociety branch2 
+  - For example,
+    - git push debugsociety branch2 
 
 ## git pull : 
 - Git pull means that you are extracting any new changes into your branch
 - When you git pull, must be in the correct branch that you want to pull into
 - For example, if I want to pull from debugsociety's 'master' branch into my 'branch2' branch
-		-git pull debugsociety master
+    - git pull debugsociety master
 
 ## git merge:
 - Git merge is when you want to bring commits from a local branch into the current branch
 - For example, if I have branch2 and branch4 in my local repository and I want to bring the changes from branch4 into branch2
-		 -git checkout branch2
-		 -git merge branch4
+  - git checkout branch2
+  - git merge branch4
