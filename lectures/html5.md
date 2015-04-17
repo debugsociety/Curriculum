@@ -1,7 +1,13 @@
 # HTML5
+HTML is the language of the web. Our websites will be output using HTML.
+
+HTML should be the easiest language you learn.
+
+## Want to see what HTML looks like?
+Using Google Chrome or Firefox, right click almost any website (even Facebook!) and press 'inspect element'. The code that you see in the large area is HTML.
 
 ```
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <title>Page Title</title>
