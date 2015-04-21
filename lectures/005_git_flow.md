@@ -8,10 +8,11 @@ Git is a Version Control System, or 'VCS'. It takes snapshots of the state of fi
 - Teammates cannot overwrite each other's files
 - The latest files can be pulled from one place
 - You can revert to an older version of the files at any time
-- You can easily tell if anyone made changes in any of your files
+- You can easily tell if anyone made changes to any of your files
+- You can easily tell who made what changes to each file
 
 ### Git Terminology
-- Git Repository ('Repo'): A folder which uses Git version control. Unless explicitly excluded, changes to files in this folder are tracked by Git, and history can easily be recorded. 
+- *Git Repository* ('Repo'): A folder which uses Git version control. Unless explicitly excluded, changes to files in this folder are tracked by Git, and history can easily be recorded. 
 - Branch: 
 - Tag
 - Checkout
