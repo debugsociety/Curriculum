@@ -12,8 +12,8 @@ Git is a Version Control System, or 'VCS'. It takes snapshots of the state of fi
 - You can easily tell who made what changes to each file
 
 ### Git Terminology
-- *Git Repository* ('Repo'): A folder which uses Git version control. Unless explicitly excluded, changes to files in this folder are tracked by Git, and history can easily be recorded. 
-- Branch: 
+- *Git Repository* ('Repo'): A folder which uses Git version control. Unless explicitly excluded, changes to files in this folder are tracked by Git, and history can easily be recorded.
+- *Branch*: A 'version' of a repository. Branches exist in parallel. Unless explicitly merged, work on each branch remains unaffected by work on other branches.
 - Tag
 - Checkout
 - Fork
