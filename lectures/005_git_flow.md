@@ -14,13 +14,16 @@ Git is a Version Control System, or 'VCS'. It takes snapshots of the state of fi
 ### Git Terminology
 - *Git Repository* ('Repo'): A folder which uses Git version control. Unless explicitly excluded, changes to files in this folder are tracked by Git, and history can easily be recorded.
 - *Branch*: A 'version' of a repository. Branches exist in parallel. Unless explicitly merged, work on each branch remains unaffected by work on other branches.
-- Tag
-- Checkout
-- Fork
-- Fetch
-- Pull
-- Merge
-
+- *Tag*: A 'snapshot' of a repository at a certain point in time.
+- *Checkout*: Checkout is a command used for switching to a different branch (version) of the same repository.
+- *Fork*: A personal copy of a repository. If you see a repository you want to work on, you can fork (copy) it, and make all the changes you want to your forked copy.
+- *Merge*: To combine work from another source (e.g. version, branch, or commit) into your current branch.
+-- For example, assume I edited 'homepage.html' on my branch1, and subpage.html on my branch2. I now want to put the work together. To do so, I could 'merge' branch2 into branch1 - and viola, branch1 now contains the changes to homepage.html *and* the changes to subpage.html
+- *Fetch*: Getting the latest versions from remote repositories without merging them into your current work.
+- *Pull*: To fetch, then merge, work into your current branch. You pull to take someone else's work from a remote repository.
+-- For example, assume I edit homepage.html on branch1, and my coworker edited subpage.html in *his* repository. I could fetch his branch from his repository, then merge it into mine - or I could simply 'pull' his branch, which would automatically fetch and then merge it into my current branch.
+- *Push*: You push to send your work to a remote repository.
+-- For example, assume I edit homepage.html, and my coworker wants to finish my work. I can push my work to github, so that my coworker can find, and then pull, my recent work.
 
 ### Cloning the Curriculum Repo
 Steps to cloning the Curriculum Repo
