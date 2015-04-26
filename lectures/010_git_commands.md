@@ -1,75 +1,92 @@
 # Commands for Git
-## git init: 
-- is for creating a new git repository. It turns the current directory into a git repository. 
+## git init:
+- For creating a new git repository.
+- It turns the current directory into a git repository.
+- For example:
+-- 'cd' into a non-git folder.
+-- Type 'git init'.
+-- Now the folder is a git repository.
 
-## git clone: 
-- is adding the files to your (physical) computer
-- is for copying (aka cloning) an existing git repository
-- For example git clone https://github.com/debugsociety/Curriculum.git curriculum downloads a copy of the entire Curriculum repository into a local folder (on your computer) called 'Curriculum'
+## git clone [URL] [destination-name]:
+- For copying (aka cloning) a repo (and all files in it) from a URL to your computer.
+- For example:
+-- "git clone https://github.com/debugsociety/Curriculum.git curriculum_local"
+-- That will download a copy of the entire Curriculum repository into a local folder (on your computer) called 'curriculum_local'
 
-## git add: 
-- Git will include the 'add'ed files into your next commit.
-- Files that were not added will remain untracked by git. 
-- Make sure you add the file exactly as is.
-- For example: if it has Day1.md, write git add Day1.md
+## git add [file or folder]:
+- Includes the 'add'ed files *in your next commit*.
+- Changes to files that were not 'add'ed will remain untracked by git.
+- Filenames must be typed exactly and with extensions.
+-- For example, if you want to add a file named File1.html to your next commit:
+-- git add File1.html will work.
+--- 'git add File1' will NOT work.
+--- 'git add file1.html' will NOT work.
 
-## git commit: 
-- Git commit will save the current version of all files that were added using 'git add' to history.
-- Before and after meaningful changes are made, there should be a commit.
-- Git commit -m "". Add a message within the ""
-- If this message displayed: no changes added to commit
-- You must git add [the file] then commit 
+## git commit -m "[message]":
+- Stores the current version of all files that were added using 'git add'.
+- There should be a commit for every meaningful change.
+- There should be a short message describing what the commit is for.
+-- For example: git commit -m "Updated git_commands.md"
+- If this message displayed: no changes added to commit, it means you did not 'git add' your changes before committing them.
 
-## git checkout -b:
-- Git checkout -b is when you want to create a new branch and switch to that branch.
-- For example, I want to create a new branch named hello, I'd write git checkout -b hello
-- Then it should tell you that you are on branch hello
-
-## git checkout [branch] : 
-- Git checkout means that you are switching branches. 
-- For example, I am on branch hello and now I want to switch to the master branch.
-- write git checkout master
+## git checkout [branch] :
+- Used to switch branches.
+-- For example:
+--- I am on the 'master' branch
+--- git checkout hello-world
+--- If it exists, I am taken to the branch named 'hello-world'
+- *Passing the -b flag causes the branch to be created, then checked out.*
 
 ## git remote add [alias] [url]:
-- Git remote add, adds a connection to a repository.
+- Adds a remote connection to a repository.
 - For example:
-  - git remote add ds https://github.com/debugsociety/Curriculum.git
+-- git remote add ds https://github.com/debugsociety/Curriculum.git
+-- Now we are connected to (can pull from) the 'debugsociety/Curriculum' repo.
+--- If we have the right privilidges, we can also now push to the 'debugsociety/Curriculum' repo.
+-- i.e. git pull ds master # this command will now automatically pull from debugsociety/Curriculum.git
 
 ## git remote:
-- Shows which nicknames of the remote repositories that you are connected to.
-  - For example, 
-  - git remote might display:
-    - origin
-    - debugsociety
-
-## git remote -v:
-- shows you the entire link of the repositories 
-- For example,  
-  - debugsociety   https://github.com/debugsociety/Curriculum.git (fetch)
-  - debugsociety   https://github.com/debugsociety/Curriculum.git (push)
-  - origin    https://github.com/..[yourgithub]/Curriculum.git (fetch)
-  - origin    https://github.com/..[yourgithub]/Curriculum.git (fetch)
+- Shows the nicknames of the remote repositories that your repo is connected to.
+-- For example:
+-- git remote might display:
+--- - origin
+--- - ds
+- *Passing the -v flag shows more detail.*
+-- For example:
+-- git remote -v might display:
+--- - ds   https://github.com/debugsociety/Curriculum.git (fetch)
+--- - ds   https://github.com/debugsociety/Curriculum.git (push)
+--- - origin    https://github.com/[YOUR-USERNAME]/Curriculum.git (fetch)
+--- - origin    https://github.com/[YOUR-USERNAME]/Curriculum.git (push)
 
 ## git branch:
-- Shows you all the branches on your computer with an asterisk next to the branch you are on.
-  - For example,
-    - master
-    - *branch2
+- Shows you the branches on your computer
+- Places an asterisk next to the branch you are on.
 
-## git push [name of repository] [branch you are pushing]:
-- Git push is when you want to send it to the online repository 
-- Git push is sending the entire branch 
-  - For example,
-    - git push debugsociety branch2 
+## git branch [name]:
+- Creates a new branch named [name].
+- The new branch's history matches the branch you created it from.
 
-## git pull : 
-- Git pull means that you are extracting any new changes into your branch
-- When you git pull, must be in the correct branch that you want to pull into
-- For example, if I want to pull from debugsociety's 'master' branch into my 'branch2' branch
-    - git pull debugsociety master
+## git push [remote] [branch you are pushing]:
+- Used for sending commits from [branch] to [remote]/[same branch]
+- Sends ALL committed work on [branch you are pushing]
 
-## git merge:
-- Git merge is when you want to bring commits from a local branch into the current branch
+## git merge [branch name]:
+- Merges work from [branch name] into the branch you currently have checked out.
 - For example, if I have branch2 and branch4 in my local repository and I want to bring the changes from branch4 into branch2
   - git checkout branch2
   - git merge branch4
+- If it says 'merge conflict', that means the two branches make changes to the same section of the same file
+-- Git will insert the changes from BOTH branches in the file
+-- Git will insert '<<<' within the file(s), before each conflict
+-- Git will insert '>>>' within the file(s), after each conflict
+-- It is your job to review what git has added to the files, then to remove what you do not want. Such as '<<<' and '>>>'.
+-- After resolving the conflict, it is your job to add and commit your changes.
+-- Following git workflows such as 'git flow' minimize messy merge conflicts.
+
+## git pull [remote] [branch name]:
+- Immediately/automatically merges all new changes from [remote]/[branch name] to the branch you currently have checked out.
+- When you git pull, make sure you have the branch you want to pull into checked out
+- For example, if I want to pull from debugsociety's 'master' branch into my 'branch2' branch
+    - git checkout branch2
+    - git pull debugsociety master
