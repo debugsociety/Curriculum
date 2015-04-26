@@ -29,6 +29,7 @@ Create a folder on your desktop called Sites
 
 Download the most recent stable version of the drupal vdd project: https://www.drupal.org/project/vdd
 - (download the zip file highlighted in green on that page)
+
 Unzip that file, place the 'vdd' folder in Desktop/Sites/
 
 Stop and do the following 2 tutorials if you're unfamiliar with using command line:

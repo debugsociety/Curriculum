@@ -2,8 +2,9 @@
 If you are new to programming, you likely spend most of your computer-time using a GUI (pronounced gooey). A GUI is a user interface designed to simplify the usage of applications. Unfortunately, a GUI just cannot match the speed and utility of the command line. Once you are comfortable working in the command line, you will be empowered.
 
 ## Why complicate things?
-*Moving files of type .pdf from the 'Downloads' folder into a folder named Desktop/PDF*
-Using the GUI:
+Some people argue that GUI is always easier, and, therefore, better. I'd like to disprove that argument with an example:
+### Task: *Move files of type .pdf from the 'Downloads' folder into a folder named Desktop/PDF*
+#### Using the GUI:
 - Right click the desktop
 - Click 'create new folder'
 - Type 'PDF'
@@ -11,11 +12,13 @@ Using the GUI:
 - Double click (open) the downloads folder
 - Drag and drop each PDF file from downloads to Desktop/PDF
  - If there are a lot of PDF files - good luck!
+
 Time taken: depending on how many files you have in ~/Downloads, likely over 5 minutes.
 
-Using the Command line:
+#### Using the Command line:
 - mkdir ~/Desktop/PDF
 - mv ~/Downloads/*.pdf ~/Desktop/PDF
+
 Time taken: 5 seconds.
 
 This is only one example; there are countless others. Once you learn how to use it, the command line will save you plenty of time; even outside of work.
