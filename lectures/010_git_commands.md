@@ -30,10 +30,10 @@
 - For example, I am on branch hello and now I want to switch to the master branch.
 - write git checkout master
 
-## git remote add [url]:
+## git remote add [alias] [url]:
 - Git remote add, adds a connection to a repository.
 - For example:
-  - git remote add https://github.com/debugsociety/Curriculum.git
+  - git remote add ds https://github.com/debugsociety/Curriculum.git
 
 ## git remote:
 - Shows which nicknames of the remote repositories that you are connected to.

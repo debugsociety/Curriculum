@@ -13,6 +13,7 @@ Git is a Version Control System, or 'VCS'. It takes snapshots of the state of fi
 
 ### Git Terminology
 - *Git Repository* ('Repo'): A folder which uses Git version control. Unless explicitly excluded, changes to files in this folder are tracked by Git, and history can easily be recorded.
+- *Commit*: A commit (revision) is a change to a file or set of files which is saved to git's history. A user must 'commit' changes they made for git to track them. Commits are tracked with a unique ID (the "SHA" or "hash"), an author, a time, and, usually, a description of the changes.
 - *Branch*: A 'version' of a repository. Branches exist in parallel. Unless explicitly merged, work on each branch remains unaffected by work on other branches.
 - *Tag*: A 'snapshot' of a repository at a certain point in time.
 - *Checkout*: Checkout is a command used for switching to a different branch (version) of the same repository.
@@ -25,39 +26,61 @@ Git is a Version Control System, or 'VCS'. It takes snapshots of the state of fi
 - *Push*: You push to send your work to a remote repository.
 -- For example, assume I edit homepage.html, and my coworker wants to finish my work. I can push my work to github, so that my coworker can find, and then pull, my recent work.
 
-### Cloning the Curriculum Repo
-Steps to cloning the Curriculum Repo
-1. Fork the debugsociety/Curriculum repo on GitHub
-2. Copy the HTTPS clone URL from the forked Curriculum repo
-3. In the terminal, run the command below:
-"git clone 'URL copied from step 2'"
+### Git Workflows
+Git is especially useful, and necessary, on large projects. But using git alone is not enough - team members need to be on the same page in *how* they use git. Our preferred git workflow is called 'Git Flow'.
 
-### Create new branch to work on homework file
-To work on the files in the Curriculum repo, we create a new branch first.
-You can create a new branch with the command below:
-"git checkout -b 'name of branch'"
+#### Git Flow
+'Git flow' defines a process team members must follow when writing code for the production (aka prod) website.
 
-The name of the branch should relate to the changes we are going to make.
-If we know we are going to make CSS changes to the jobs offered page for 
-example, we might name the branch 'styling-jobs'.
+##### Rules
+1. The 'master' branch contains work that has been (or is currently being) released on prod.
+2. The 'develop' branch contains work that the team plans to release to prod.
+3. Work (tasks/features) currently being developed should reside on feature branches based on the develop branch.
+4. Every new task/feature should be on its own feature branch.
+5. Individual feature branches should be merged into the develop branch *only after being reviewed and approved for prod*.
+6. The develop branch should be merged into the master branch *only when the develop branch's work is released on prod*.
 
-### Push our changes to our repos
-We've made some changes, but they are only on our computers. To add them to
-our forked GitHub Curriculum repo, we need to commit those changes, and push
-them to the repo.
-1. Commit the changes you made using the command below:
-"git commit -m 'Insert meaningful message describing your change'"
-Note: if you added a new file that you would like to include as part of your 
-changes, you'll need to run git add first.
-2. To push the changes to our repo, we will make use of the git push command.
+##### Example
+We are a team with 5 developers working on debugacademy.com , using git flow.
+- The prod website's code matches the 'master' branch exactly.
+- The develop branch has a project management module on it, waiting to be deployed.
+- Ashraf will now begin working on a user dashboard page, complementary to the project management module.
+-- Ashraf will create a new *feature branch* based off of the develop branch
+-- Ashraf will name the new branch something unique, such as 'pm-user-dashboard'
+- When Ashraf finishes his work, he creates a pull request for his feature branch
+- After a coworker (and client, if applicable) has reviewed and approved the work:
+-- A senior team member will merge the work into the develop branch
+- When the work on the develop branch is ready to be released on prod:
+-- The develop branch will be merged into the master branch
+-- Prod will be updated to match the master branch
 
-Run the command "git remote -v" first to see the names of your remote connections. 
-If you cloned the Curriculum Repo after forking as mentioned above, you should see 
-something like the following:
-origin https://github.com/username/Curriculum.git (fetch)
-origin https://github.com/username/Curriculum.git (push)
+### Your first Git repository
+We have a repository (repo) named 'assignments'. This repo will contain a number of assignments for getting you up to speed with Git, as well as other technologies.
 
-Next, run the command below:
-"git push origin 'name of your branch'"
-Enter your username and password for GitHub
-Note: your password won't display as you type it - this is a security feature :)
+#### Getting started with the assignments repo
+0. Log in to github.com
+1. Fork the debugsociety/assignments repo on GitHub
+2. Copy the HTTPS clone URL from your forked assignments repo
+- For example: https://github.com/YOUR-GITHUB-USERNAME/assignments.git
+3. In the terminal, cd to the directory you want to place the repo folder in
+4. Clone (copy) the repo into that directory using the git clone command: "git clone URL-OF-FORKED-REPO"
+- For example, git clone https://github.com/YOUR-GITHUB-USERNAME/assignments.git
+
+##### Set up your repo's remote connections
+If you followed the steps in the previous section, then you have cloned your fork of the assignments repo. Great - now we have a copy of the entire repo on our computer. What next?
+
+###### Why?
+Ultimately, we want to share our work with teammates (PUSH), and we want to be able to take work that they have shared (PULL). Where do we want to push to? Where do we want to pull from? These are our 'remote' repositories.
+
+###### How?
+Type 'git remote -v' to see which remotes you are currently connected to. By default, you are only connected to the remote which you cloned the repo from, and it is named 'origin' by default. In this example, you should see the URL to your forked 'assignments' repo.
+
+Your fork is where you can push your work to. What if the official repo is updated? We want to be able to pull the latest updates from that repo.
+
+Let's set ourselves up to be able to pull work from the official repo:
+1. Go to the official assignments repo
+- Found at github.com/debugsociety/assignments
+2. Copy the HTTPS clone URL from that repo
+3. cd to your local assignments repo
+4. Add the official repo as a remote: git remote add [alias] [URL]
+- For example, to name the connection 'prod', you would run the following: git remote add prod https://github.com/debugacademy/assignments.git
