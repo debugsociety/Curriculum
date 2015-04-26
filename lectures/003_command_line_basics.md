@@ -1,7 +1,7 @@
 # Command line basics
 If you are new to programming, you likely spend most of your computer-time using a GUI (pronounced gooey). A GUI is a user interface designed to simplify the usage of applications. Unfortunately, a GUI just cannot match the speed and utility of the command line. Once you are comfortable working in the command line, you will be empowered.
 
-## Why complicate things with the command line?
+## Why complicate things?
 *Moving files of type .pdf from the 'Downloads' folder into a folder named Desktop/PDF*
 Using the GUI:
 - Right click the desktop
@@ -53,11 +53,22 @@ This is only one example; there are countless others. Once you learn how to use 
 - Example 2: mv file2.html files/file2.html
 -- Moved file2.html into the relative folder 'files'
 
+### grep '[word]' [file]
+- 'grep' => Global regular expression
+- To 'grep' for something is to search for it
+- Search for [word] in [file]
+- 'grepping' is case-sensitive
+- *The -r flag makes grep search recursively, rather than only in the current folder.*
+- For example:
+-- grep -r 'Command lin' ~/Desktop/debugacademy/assignments
+-- Will return all files inside the 'assignments' folder which have the word 'Command lin'.
+
 ## Short cuts
 These shortcuts can be used most anywhere a filename could be used.
 
 ### * (asterisks)
 - Asterisks means 'anything'.
+- In many commands, can be used as part of a filename to expand the command. For example:
 - Can be used to select all files in a folder
 -- mv files/* files/ashraf/
 - Can be used to move files based on a partial filename
