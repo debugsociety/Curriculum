@@ -19,12 +19,12 @@ Git is a Version Control System, or 'VCS'. It takes snapshots of the state of fi
 - *Checkout*: Checkout is a command used for switching to a different branch (version) of the same repository.
 - *Fork*: A personal copy of a repository. If you see a repository you want to work on, you can fork (copy) it, and make all the changes you want to your forked copy.
 - *Merge*: To combine work from another source (e.g. version, branch, or commit) into your current branch.
--- For example, assume I edited 'homepage.html' on my branch1, and subpage.html on my branch2. I now want to put the work together. To do so, I could 'merge' branch2 into branch1 - and viola, branch1 now contains the changes to homepage.html *and* the changes to subpage.html
+ - For example, assume I edited 'homepage.html' on my branch1, and subpage.html on my branch2. I now want to put the work together. To do so, I could 'merge' branch2 into branch1 - and viola, branch1 now contains the changes to homepage.html *and* the changes to subpage.html
 - *Fetch*: Getting the latest versions from remote repositories without merging them into your current work.
 - *Pull*: To fetch, then merge, work into your current branch. You pull to take someone else's work from a remote repository.
--- For example, assume I edit homepage.html on branch1, and my coworker edited subpage.html in *his* repository. I could fetch his branch from his repository, then merge it into mine - or I could simply 'pull' his branch, which would automatically fetch and then merge it into my current branch.
+ - For example, assume I edit homepage.html on branch1, and my coworker edited subpage.html in *his* repository. I could fetch his branch from his repository, then merge it into mine - or I could simply 'pull' his branch, which would automatically fetch and then merge it into my current branch.
 - *Push*: You push to send your work to a remote repository.
--- For example, assume I edit homepage.html, and my coworker wants to finish my work. I can push my work to github, so that my coworker can find, and then pull, my recent work.
+ - For example, assume I edit homepage.html, and my coworker wants to finish my work. I can push my work to github, so that my coworker can find, and then pull, my recent work.
 
 ### Git Workflows
 Git is especially useful, and necessary, on large projects. But using git alone is not enough - team members need to be on the same page in *how* they use git. Our preferred git workflow is called 'Git Flow'.
@@ -45,14 +45,14 @@ We are a team with 5 developers working on debugacademy.com , using git flow.
 - The prod website's code matches the 'master' branch exactly.
 - The develop branch has a project management module on it, waiting to be deployed.
 - Ashraf will now begin working on a user dashboard page, complementary to the project management module.
--- Ashraf will create a new *feature branch* based off of the develop branch
--- Ashraf will name the new branch something unique, such as 'pm-user-dashboard'
+ - Ashraf will create a new *feature branch* based off of the develop branch
+ - Ashraf will name the new branch something unique, such as 'pm-user-dashboard'
 - When Ashraf finishes his work, he creates a pull request for his feature branch
 - After a coworker (and client, if applicable) has reviewed and approved the work:
--- A senior team member will merge the work into the develop branch
+ - A senior team member will merge the work into the develop branch
 - When the work on the develop branch is ready to be released on prod:
--- The develop branch will be merged into the master branch
--- Prod will be updated to match the master branch
+ - The develop branch will be merged into the master branch
+ - Prod will be updated to match the master branch
 
 ### Your first Git repository
 We have a repository (repo) named 'assignments'. This repo will contain a number of assignments for getting you up to speed with Git, as well as other technologies.
