@@ -35,7 +35,13 @@
 --- I am on the 'master' branch
 --- git checkout hello-world
 --- If it exists, I am taken to the branch named 'hello-world'
-- *Passing the -b flag causes the branch to be created, then checked out.*
+
+## git checkout -b [new-branch] [branch]:
+- Used to create a new branch named [new-branch], which initially matches the branch named [branch] exactly
+-- For example:
+--- git checkout -b my-branch master
+--- The branch 'my-branch' is created based off of the 'master' branch
+--- Then I am taken to the new 'my-branch' branch
 
 ## git remote add [alias] [url]:
 - Adds a remote connection to a repository.
